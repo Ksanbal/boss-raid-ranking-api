@@ -5,6 +5,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
 import { typeOrmAsyncModuleOptions } from './config/typeorm.config';
+import { UserModule } from './api/user/user.module';
+import { RankingModule } from './api/ranking/ranking.module';
+import { BossRaidModule } from './api/boss-raid/boss-raid.module';
 import * as Joi from 'joi';
 
 @Module({
@@ -18,6 +21,9 @@ import * as Joi from 'joi';
       }),
     }),
     TypeOrmModule.forRootAsync(typeOrmAsyncModuleOptions),
+    UserModule,
+    RankingModule,
+    BossRaidModule,
   ],
   controllers: [AppController],
   providers: [AppService],
