@@ -41,7 +41,9 @@
 
 ## 🚧 ERD
 
-<iframe width="560" height="315" src='https://dbdiagram.io/embed/63242deb0911f91ba5c6425b'> </iframe>
+[dbdiagram.io](https://dbdiagram.io/d/63242deb0911f91ba5c6425b)
+
+![](ERD.png)
 
 ## 🚀 프로젝트 실행
 
