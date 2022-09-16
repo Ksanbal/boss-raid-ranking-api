@@ -1,97 +1,71 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# boss-raid-ranking-api
 
-# NestJS & TypeORM Template
+랭킹시스템이 있는 보스레이드 게임 API
 
-## Description
+## 목차 🙇‍♂️
 
-NestJS & TypeORM(sqlite3) 프로젝트 기본 템플릿입니다.
+- [Skills](#👨‍🔧-skills)
+- [서비스개요](#📑-서비스-개요)
+- [구현사항](#🛠-구현-사항)
+- [ERD](#🚧-erd)
+- [프로젝트 실행](#🚀-프로젝트-실행)
+- [문서](#📚-문서)
 
-- Swagger
-- HttpException & ResponseInterceptor
-- Request Logger
-- Example API
+## 👨‍🔧 Skills
 
-## Version
+### API
 
-- Node : v16.17.0
-- NPM : 8.15.0
-- Yarn : 1.22.19
+<div>
+  <img src="https://img.shields.io/badge/node-16.17.0-339933?logo=node.js"> 
+  <img src="https://img.shields.io/badge/TypeScript-4.4.5-3178C6?logo=typescript"> 
+  <img src="https://img.shields.io/badge/NestJS-9.0.0-E0234E?logo=NestJS">
+  <img src="https://img.shields.io/badge/@nestjs/axios-0.1.0-E0234E">
+</div>
 
-## Installation
+### ORM
+
+<img src="https://img.shields.io/badge/TypeORM-0.3.9-orange">
+
+### DB
+
+<img src="https://img.shields.io/badge/sqlite3-5.0.11-4479A1?logo=sqlite">
+<img src="https://img.shields.io/badge/redis-7.0.4-FF0000?logo=redis">
+
+### Docs
+
+<img src="https://img.shields.io/badge/Swagger-6.1.0-green?logo=swagger">
+
+## 📑 서비스 개요
+
+## 🛠 구현 사항
+
+## 🚧 ERD
+
+<iframe width="560" height="315" src='https://dbdiagram.io/embed/63242deb0911f91ba5c6425b'> </iframe>
+
+## 🚀 프로젝트 실행
+
+### 1. .env 작성
+
+```text
+MODE="prod" # dev, prod
+PORT=3000
+```
+
+### 2. 프로젝트 실행
 
 ```bash
 # npm
 $ npm install
 
+$ npm build; npm run start:prod
+
 # yarn
 $ yarn
+
+$ yarn build; yarn start:prod
 ```
 
-## Running the app
+## 📚 문서
 
-```bash
-# npm
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-
-# yarn
-# development
-$ yarn start
-
-# watch mode
-$ yarn start:dev
-
-# production mode
-$ yarn start:prod
-```
-
-## Test
-
-```bash
-# npm
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-
-# yarn
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
-```
-
-## Docker
-
-```bash
-# Build
-docker build -t nestjs-typeorm-template .
-
-# RUN
-docker run -d -p 3000:3000 nestjs-typeorm-template
-```
-
-## Stay in touch
-
-- Author - [dev.ksanbal](https://github.com/Ksanbal)
-- Blog - [https://devksanbal.notion.site](https://devksanbal.notion.site/dev-ksanbal-93ace024e8c24f55b06830ca6473e7e4)
-
-## License
-
-[MIT licensed](LICENSE).
+### [Local Swagger API](http://localhost:3000/docs)
