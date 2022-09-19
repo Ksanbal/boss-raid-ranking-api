@@ -21,13 +21,14 @@ export class RaidRecordEntity extends BaseEntity {
     name: 'user_id',
     referencedColumnName: 'userId',
   })
-  userId: UserEntity;
+  user: UserEntity;
 
   @CreateDateColumn({})
   enterTime: Date;
 
   @Column({
     type: 'datetime',
+    nullable: true,
   })
   endTime: Date;
 

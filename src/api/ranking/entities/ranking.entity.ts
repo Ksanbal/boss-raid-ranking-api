@@ -25,7 +25,7 @@ export class RankingEntity extends BaseEntity {
     name: 'user_id',
     referencedColumnName: 'userId',
   })
-  userId: UserEntity;
+  user: UserEntity;
 
   @Column({
     type: 'int',

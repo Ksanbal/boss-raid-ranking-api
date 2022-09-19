@@ -1,4 +1,4 @@
-import { Controller, Post } from '@nestjs/common';
+import { Controller, Get, Param, ParseIntPipe, Post } from '@nestjs/common';
 import { UserService } from './user.service';
 
 @Controller('user')
@@ -11,5 +11,14 @@ export class UserController {
   @Post()
   join() {
     return this.userService.join();
+  }
+
+  /**
+   * 유저 조회 API
+   * @param userId 유저 id
+   */
+  @Get(':userId')
+  retrieve(@Param('userId', ParseIntPipe) userId: number) {
+    return this.userService.retrieve(userId);
   }
 }
