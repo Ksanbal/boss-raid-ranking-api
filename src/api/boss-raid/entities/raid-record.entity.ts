@@ -33,8 +33,18 @@ export class RaidRecordEntity extends BaseEntity {
   endTime: Date;
 
   @Column({
+    type: 'datetime',
+  })
+  expiredTime: Date;
+
+  @Column({
     type: 'int',
     nullable: true,
   })
   score: number;
+
+  @Column({
+    type: 'int',
+  })
+  level: number;
 }
