@@ -8,6 +8,7 @@ import { typeOrmAsyncModuleOptions } from './config/typeorm.config';
 import { UserModule } from './api/user/user.module';
 import { RankingModule } from './api/ranking/ranking.module';
 import { BossRaidModule } from './api/boss-raid/boss-raid.module';
+import { BossRaidDataModule } from './repositories/boss-raid-data/boss-raid-data.module';
 import * as Joi from 'joi';
 
 @Module({
@@ -24,6 +25,7 @@ import * as Joi from 'joi';
     UserModule,
     RankingModule,
     BossRaidModule,
+    BossRaidDataModule,
   ],
   controllers: [AppController],
   providers: [AppService],
