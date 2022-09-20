@@ -2,7 +2,7 @@ import { Body, Controller, Post } from '@nestjs/common';
 import { BossRaidService } from './boss-raid.service';
 import { EnterBossRaidDto } from './dtos/enterBossRaid.dto';
 
-@Controller('boss-raid')
+@Controller('bossRaid')
 export class BossRaidController {
   constructor(private readonly bossRaidService: BossRaidService) {}
 
